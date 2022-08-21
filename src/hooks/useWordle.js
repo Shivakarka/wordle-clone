@@ -3,8 +3,8 @@ import { useState } from "react";
 const useWordle = (solution) => {
   const [turn, setTurn] = useState(0);
   const [currentGuess, setCurrentGuess] = useState("");
-  const [guesses, setGuesses] = useState([]); // each guess is an array
-  const [history, setHistory] = useState(["hello"]); // each guess is a string
+  const [guesses, setGuesses] = useState([...Array(6)]); // each guess is an array
+  const [history, setHistory] = useState([]); // each guess is a string
   const [isCorrect, setIsCorrect] = useState(false);
 
   // func to format guess into array of letter objects
@@ -37,7 +37,23 @@ const useWordle = (solution) => {
   // func to add a new guess to the guess state
   // update the incorrect state if guess is wrong
   // add one to the turn state after each guess
-  const addNewGuess = () => {};
+  const addNewGuess = (formattedGuess) => {
+     if (currentGuess === solution) {
+      setIsCorrect(true)
+    }
+    setGuesses(prevGuesses => {
+      let newGuesses = [...prevGuesses]
+      newGuesses[turn] = formattedGuess
+      return newGuesses
+    })
+    setHistory(prevHistory => {
+      return [...prevHistory, currentGuess]
+    })
+    setTurn(prevTurn => {
+      return prevTurn + 1
+    })
+    setCurrentGuess('')
+  };
 
   // func to handle keyup event and track current guess
   // if user press enter , add the new guess
@@ -61,7 +77,7 @@ const useWordle = (solution) => {
           return
         }
       const formatted = formatGuess()
-      console.log(formatted)
+        addNewGuess(formatted)
       }
 
     if (key === "Backspace") {
