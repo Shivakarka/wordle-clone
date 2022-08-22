@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# Wordle Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live  Link: https://shivakarka-wordle-clone.vercel.app/
+<br>
+Tech Stack: React JS, CSS
+<br>
 
-## Available Scripts
+## HOW TO PLAY
+-Guess the WORDLE in 6 tries.
 
-In the project directory, you can run:
+-Each guess must be a valid 5-letter word. Hit the enter button to submit.
 
-### `npm start`
+-After each guess, the color of the tiles will change to show how close your guess was to the word.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Screenshots:- 
+<br>
 
-### `npm test`
+![captures_chrome-capture-2022-7-23 (2)](https://user-images.githubusercontent.com/64298475/185997139-7cdddefc-a9a4-49f2-b8fd-cc472afdb01b.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![captures_chrome-capture-2022-7-23 (3)](https://user-images.githubusercontent.com/64298475/185997157-b01739ff-9268-4f3f-9b08-4350003f3aaa.png)
 
-### `npm run build`
+![captures_chrome-capture-2022-7-23](https://user-images.githubusercontent.com/64298475/185997232-eb0a9449-3343-4f7b-ad28-185d1e29eab5.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Steps Required to view the project locally on browser.
+- Download zip or clone the repo using git command
+- Run npm install command to install required dependencies
+- Run npm start to view the web page locally at  http://localhost:3000 in the browser
