@@ -5,11 +5,16 @@ function App() {
   const [solution, setSolution] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:3001/solutions")
+    fetch("https://api.npoint.io/403c055fd699b9b3bdf3", {
+      method: "get",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
       .then((res) => res.json())
       .then((json) => {
         const randomSolution = json[Math.floor(Math.random() * json.length)];
-        setSolution(randomSolution.word)
+        setSolution(randomSolution.word);
       });
   }, [setSolution]);
 
