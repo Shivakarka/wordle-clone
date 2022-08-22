@@ -1,5 +1,7 @@
 # Wordle Clone
 
+## Note: This is a Desktop only website.
+
 Live  Link: https://shivakarka-wordle-clone.vercel.app/
 <br>
 Tech Stack: React JS, CSS
